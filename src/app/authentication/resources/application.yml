@@ -1,0 +1,7 @@
+db:
+  host: localhost
+  port: 5433
+  user: postgres
+  password: 2712
+  dbname: stock_broker_application
+  sslmode: disable
