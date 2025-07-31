@@ -1,12 +1,12 @@
 package router
 
 import (
-	"github.com/gin-gonic/gin"
 	"authentication/constants"
 	"authentication/handlers"
+	"github.com/gin-gonic/gin"
 )
 
-func SetupRoutes(r *gin.Engine) {
-	r.POST(constants.SignUpRoute, handlers.SignUp)
-	r.POST(constants.SignInRoute, handlers.SignIn)
+func SetUpRoutes(router *gin.Engine) {
+	router.POST(constants.SignInRoute, handlers.SignInHandler)
+	router.POST(constants.SignUpRoute, handlers.SignUpHandler)
 }

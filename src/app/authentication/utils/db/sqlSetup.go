@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	_ "github.com/lib/pq"
 	"authentication/utils"
+	_ "github.com/lib/pq"
 )
 
 var DB *sql.DB
